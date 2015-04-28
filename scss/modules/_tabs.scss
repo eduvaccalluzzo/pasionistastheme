@@ -1,0 +1,76 @@
+/* Tabs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.tabs{
+
+	.tabTitle{
+		position: relative;
+
+		text-align: center;
+		border-bottom: 1px solid $color-borde;
+		cursor: pointer;
+
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -0.75rem;
+			left: 50%;
+
+			z-index: 5;
+
+			transform: translateX(-50%) rotate(45deg);
+			-webkit-transform: translateX(-50%) rotate(45deg);
+			-ms-transform: translateX(-50%) rotate(45deg);
+
+			width: 1.5rem;
+			height: 1.5rem;
+
+			background-color: #ffffff;
+			border-right: 1px solid $color-borde;
+			border-bottom: 1px solid $color-borde;
+
+			display: none;
+
+		}
+
+		h3:hover{
+			color: $color-primario;
+			@include transicion;
+		}
+
+		&.tabActive{
+			h3{
+				color: $color-primario;
+			}
+			&::before{
+				display: block;
+			}
+		}
+	}
+	
+	.tabContent{
+		position: relative;
+
+		z-index: 99;
+
+		display: none;
+		margin: 0;
+		padding: 3rem;
+		border-bottom: 1px solid $color-borde;
+
+		p{
+			margin-top: 0;
+		}
+
+		img{
+			display: block;
+			width: 90%;
+			max-width: 20rem;
+			height: auto;
+
+			margin: 0 auto 2rem;
+		}
+
+
+	}
+}

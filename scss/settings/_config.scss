@@ -1,0 +1,65 @@
+
+///////////////
+// VARIABLES
+///////////////
+
+// Documento
+
+$content-width: 96rem;
+
+// Tipografia
+
+$font-family:'avenir', helvetica, arial, sans-serif;
+$font-secondary:'lora', helvetica;
+
+$font-size: 1.6rem;
+$line-height: 1.8;
+
+// Colores
+
+$brand-color: #7a2031;
+$brand-color-dark: #5e1926;
+
+$brand-color-secondary: #daa520;
+
+$black-dark: #5c5c5c;
+$black: #262626;
+$black-light: #707070;
+$black-lighter: #f3f3f3;
+
+$grey: #cbcbcb;
+$gray-lighter: #f1f2f4;
+$gray-light: #707070;
+
+$white: #ffffff;
+
+
+$brand-color-spain: #ba122b;
+$brand-color-andina: #e95d0f;
+$brand-color-bolivia: #009ee0;
+
+
+////////////
+// MIXINS
+////////////
+
+// Centrado vertical y horizontal
+@mixin centrado{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+}
+
+// Transiciones
+
+@mixin transicion{
+	-webkit-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	
+}
+

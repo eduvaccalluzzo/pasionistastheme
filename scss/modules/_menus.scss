@@ -1,0 +1,190 @@
+
+/* Menu principal / Main Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.mainNav{
+	position: absolute;
+    top: 0;
+    right: 0;
+  
+    text-align: right;
+	//padding: 4rem 2rem;
+
+	
+	li{
+	  display: inline-block;
+	  vertical-align: baseline;
+	  margin: 0rem;
+	  margin-left: 3rem;
+		a{
+			display: block;
+			line-height: 4rem;  
+			font-size: 1.3rem;
+			font-weight: 600;
+		}
+	}
+
+
+
+	.sub-menu{
+
+		a{
+			text-transform: none;
+		}
+
+		a:hover,
+		.current-menu-item > a{
+			color: $white;
+		}
+
+
+		.sub-menu{
+			li{
+				margin-left: 1rem;
+			}
+		}
+	}
+
+
+
+
+	.menu-title{
+		border-bottom: 1px solid $black-light;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		> a{
+			font-size: 1.2rem;
+			color: $gray-light;
+
+		}
+
+		&:last-child{
+			border: none;
+		}
+	}
+
+}
+
+
+
+
+
+/* Menu Footer / Footer Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footerNav {
+		overflow: hidden;
+	
+
+	ul {
+	  padding: 0;
+	}
+
+
+	.menu > li  {
+		float: left;
+		width: 33%;
+		line-height: 1.5;
+
+	}
+
+	.menu > li > a {
+		font-size: 1.4rem;
+		//font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+		color: $black-lighter;
+		font-weight: 600;
+
+	}
+
+	.sub-menu > li a {
+	  
+	  font-size: 1.4rem;
+	}
+
+}
+
+
+
+
+
+.secondNav {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+
+
+	-webkit-transform: translate(-50%, -15%);
+	-ms-transform: translate(-50%, -15%);
+	transform: translate(-50%, -15%);
+
+
+	 
+	 	li{
+	 	  float: left;
+		  //display: inline-block;
+		  vertical-align: baseline;
+		  margin: 0rem;
+		  //margin-left: 3rem;
+		  border: 1px solid $white;
+		  border-right: none; 
+		  padding: 0 1rem;
+
+		  @include transicion;
+
+	  	  &:last-child {
+	  		border-right: 1px solid $white;
+	  	  }
+	  
+	  	  &:hover {
+	  	  	background-color: rgba(255,255,255,0.4);
+	  	  }	
+
+
+
+		a{
+			display: block;
+			line-height: 4rem;  
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: $white;
+			text-transform: uppercase;
+			font-style: italic;		
+			
+		}
+	}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

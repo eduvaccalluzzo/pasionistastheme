@@ -1,0 +1,116 @@
+section#s_parroquias {
+	//background-color: red;
+	overflow: hidden;
+	padding: 10rem 0 13rem;
+
+	.carouselParroquias {
+		width: 100%;
+		//padding: 8rem 0;	
+	}
+
+	.imgParroquia {
+		width: auto;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4); 
+		position: relative;
+	}
+
+
+ 	.datosParroquia{
+ 		position: absolute;
+ 		background-color: $black-lighter;
+ 		width: 80%;
+ 		height: auto;
+ 		padding: 1rem 0.5rem;
+ 		
+ 		left: 50%;
+
+ 		-webkit-transform: translate(-50%, -40%);
+		-ms-transform: translate(-50%, -40%);
+		transform: translate(-50%, -40%);
+
+
+		h5, 
+		.direccion {
+			margin: 0;
+		}
+
+		.direccion {
+			font-size: 1.2rem;
+
+		}
+
+ 	}
+
+ 	a:hover {
+ 		color: $black-light;
+ 		cursor: default;
+ 	}
+
+
+
+}
+
+
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 110rem) {
+	
+	section#s_parroquias {
+
+		.datosParroquia {
+			width: 85%;
+			padding: 1rem 0.2rem;
+
+			h5 {
+				font-family: 1.4rem;
+			}
+
+			.direccion {
+				font-size: 1.1rem;
+
+			}
+		}	
+	}
+
+}
+
+
+
+@media only screen and (max-width: 90rem) {
+	
+
+
+	.slider1 {
+		display:none;
+	}
+
+
+	.slider2 {
+		display:block;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

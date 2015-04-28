@@ -1,0 +1,60 @@
+
+/* Listas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul { 
+  list-style-type: none; 
+}
+
+ol { 
+  list-style: none; 
+}
+
+ol, ul {
+  margin-top: 0;
+  padding-left: 0; 
+}
+
+ul ul, 
+ul ol,
+ol ol, 
+ol ul { 
+  margin: 1.5rem 0 1.5rem 3rem; 
+  font-size: 90%; 
+}
+
+li {
+	list-style-type: none;
+  	margin-bottom: 1rem; 
+  	//display: block;
+}
+
+
+// Descartamos las listas de menus 
+
+nav ul,
+nav ol{
+	list-style: none;
+
+	ul, ol, li{
+		margin: 0;
+		font-size: 100%; 
+	}
+}
+
+
+
+/* Listas definicion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+dl{
+
+	dt{
+		font-size: 90%;
+		color: $black-light;
+	}
+
+	dd{
+		margin: 0 0 2rem 1rem;
+	}
+}

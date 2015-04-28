@@ -1,0 +1,39 @@
+/*
+Theme Name: Pasionistas Theme
+Author: byadrenaline
+Author URI: http://byadrenaline.com/
+Description: Tema desarrollado a medida para Pasionistas.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: byadr
+*/
+
+
+/* 1.- Settings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_settings.scss";
+
+/* 2.- Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_base.scss";
+
+
+/* 3.- Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_layout.scss";
+
+
+/* 4.- Modules
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "_modules.scss";
+
+/* 5.- Plugins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "_plugins.scss";
+
+

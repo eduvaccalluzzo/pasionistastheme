@@ -1,0 +1,39 @@
+/* Logos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo{
+	position: relative;
+	width: 25rem;
+	height: 25rem;
+	background-color: #ffffff;
+	margin: 0;
+
+	border-right: 1px solid $gray-lighter;
+
+	a{
+		@include centrado;
+		display: block;
+		width: 15.3rem;
+		height: 15.3rem;
+
+		background-image: url('images/logo.png');
+		background-repeat: no-repeat;
+
+		text-indent: -9999px;
+
+	}
+}
+
+
+
+.logo-article {
+		width: 25rem;
+		height: 15rem;
+		margin: 0 auto;
+
+
+		img {
+			padding-left: 4rem;
+		}
+
+}

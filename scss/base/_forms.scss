@@ -1,0 +1,32 @@
+form{
+	p{
+		color: $color-texto;
+	}
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="submit"],
+textarea{
+	width: 100%;
+	margin: 1rem 0;
+
+	border: 1px solid $color-borde;
+
+	@include transicion;
+
+	&:focus{
+		outline: none;
+		border-color: $color-primario;
+	}
+
+}
+
+input[type="checkbox"]{
+	display: inline-block;
+}
+
+input[type="submit"]{
+	border: none;
+}

@@ -1,0 +1,19 @@
+
+table{
+	thead, tbody{
+		background-color: none;
+		border: 1px solid $black-light;
+		
+		th, td{
+			font-weight: normal;
+			padding: 1rem;
+			border-right: 1px solid $black-light;
+			border-bottom: 1px solid $black-light;
+
+			&:last-child{
+				border-right: none;
+			}
+		}
+	}
+
+}

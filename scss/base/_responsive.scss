@@ -1,0 +1,66 @@
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.visible-web {
+	display:block;
+}
+
+
+
+.visible-phone {
+	display:none;
+}
+
+.slider1 {
+	display: block;
+}
+
+.slider2 {
+	display: none;
+}
+
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media only screen and (max-width: 76.8rem) {
+	
+
+	.visible-web {
+		display:none;
+	}
+
+
+	
+
+
+	.visible-phone {
+		display:block;
+	}
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 38rem) {
+	
+
+	.visible-web {
+		display:block;
+	}
+
+
+	.visible-phone {
+		display:none;
+	}
+
+
+}

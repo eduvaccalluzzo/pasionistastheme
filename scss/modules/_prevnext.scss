@@ -1,0 +1,48 @@
+
+/* Previous / Next
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+nav.prevNext{
+	div{
+		position: absolute;
+		top: 100rem;
+
+		a{
+			color: #ccc;
+			font-weight: 400;
+			&:hover{
+				color: $color-primario;
+			}
+		}
+	}
+
+	.prevLink{
+		left: 2rem;
+		a:before{
+			content: '\e809';
+			font-family: "fehrcarem";
+			display: inline-block;
+			margin: 0 1rem;
+			
+
+		}
+	}
+
+	.nextLink{
+		right: 2rem;
+		a:after{
+			content: '\e80a';
+			font-family: "fehrcarem";
+			display: inline-block;
+			margin: 0 1rem;
+			
+		}
+	}
+}
+
+@media only screen and (max-width: 76.8rem) {
+	nav.prevNext{
+		display: none;
+	} 
+}

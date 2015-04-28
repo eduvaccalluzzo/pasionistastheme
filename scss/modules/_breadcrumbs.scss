@@ -1,0 +1,22 @@
+
+.breadcrumbs{
+	li{
+		display: inline-block;
+		vertical-align: top;
+
+		font-size: 1.6rem;
+		color: $brand-color;
+
+		&::after{
+			content: '/';
+			margin-left: 0.5rem;
+		}
+
+		&:last-child::after{
+			content: '';
+		}
+	}
+
+
+
+}

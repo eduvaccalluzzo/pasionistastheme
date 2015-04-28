@@ -1,0 +1,39 @@
+.main{
+	//margin-left: 25rem;
+	padding: 5rem 0 7rem 0;
+	background-color: $black-lighter;
+	
+
+	.content-box{
+		//margin: 0 4rem;
+		padding: 4rem;
+		background-color: #ffffff;
+		border: 1px solid $gray-lighter;
+
+	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+	  width: 100%;
+	  max-width: 70rem;
+	  margin: 0 auto;
+	  padding: 2rem 0;
+	  text-align: center;
+	}
+
+	p {
+	  width: 100%;
+	  max-width: 70rem;
+	  margin: 0 auto;
+	  padding: 2rem 0;
+
+	}
+
+}
+
+
+
+
+
+
+ 
