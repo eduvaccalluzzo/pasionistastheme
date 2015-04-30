@@ -1391,6 +1391,11 @@ section#s_parroquias a:hover {
   z-index: 999;
 }
 
+button.slick-prev {
+  background-color: red;
+  margin: 0 auto;
+}
+
 /* @import "plugins/_googlemaps.scss";
 
 */

@@ -15,5 +15,20 @@
   }
 }
 
-@include font-face("", 'fonts/');
+@include font-face("fontello", 'font/fontello');
 
+
+
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-menu:before { content: '\e801'; } /* '' */
+.icon-briefcase:before { content: '\e803'; } /* '' */
+.icon-food:before { content: '\e804'; } /* '' */
+.icon-circle:before { content: '\e805'; } /* '' */
+.icon-quote-left:before { content: '\e807'; } /* '' */
+.icon-quote-right:before { content: '\e808'; } /* '' */
+.icon-down-open:before { content: '\e809'; } /* '' */
+.icon-twitter:before { content: '\e80a'; } /* '' */
+.icon-facebook:before { content: '\e80b'; } /* '' */
+.icon-up-open:before { content: '\e80c'; } /* '' */
+.icon-gplus:before { content: '\e80d'; } /* '' */
+.icon-youtube-play:before { content: '\e812'; } /* '' */

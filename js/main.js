@@ -33,16 +33,16 @@ var ventana = $(window);
 		$('.carouselParroquias').slick({
 			centerMode: true,
 			centerPadding: '80px',
+			pauseOnHover: false,
 
 			slidesToShow: 7,
 			slidesToScroll: 1,
 
 			autoplay: true,
-			autoplaySpeed: 2000,
+			autoplaySpeed: 1500,
 
 			arrows: false,
 			draggable: false,
-			
 
 			
 			responsive: [
@@ -63,13 +63,13 @@ var ventana = $(window);
 				settings: {
 					slidesToShow: 1,
 				}
-		    },
+		    }/* ,
 		    {
-			    breakpoint: 400,
+			   breakpoint: 400,
 				settings: {
 					centerMode: false,
 				}
-		    }
+		    }*/
 		    
 		    ]
 		});
@@ -82,6 +82,16 @@ var ventana = $(window);
 
 
 
+/* Menu Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+$('.mobileNav').on('click',byadr_mostrar_menu_responsive);
+
+function byadr_mostrar_menu_responsive () {
+  $('.mobileNav .menu-menu-principal-container').toggleClass('right_ok');
+
+}
 
 
 

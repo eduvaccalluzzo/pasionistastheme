@@ -2,8 +2,6 @@
 
 <section id="s_parroquias">
 
-	
-	
 	<h4 class="h1">Nuestras Parroquias en España</h4>
 	
 	<?php 

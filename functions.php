@@ -55,7 +55,7 @@
 
 		add_image_size( 'blog', 300, 260, true );
 
-		add_image_size( 'slide1', 540, 300, true );
+		add_image_size( 'slide1', 540, 450, true );
 
 		// Custom Header
 		$defaults = array(
@@ -109,7 +109,7 @@
 
 	    register_nav_menus(
 		    array(
-		      'main-menu'	=>	__( 'Main Menu', 'byadr' ),
+		      'main-menu'	=>	__( 'Menu Principal', 'byadr' ),
 		      'footer-menu'	=>	__( 'Footer Menu', 'byadr' ),
 		      'social-menu'	=>	__( 'Social Menu', 'byadr' ),
 		      'second-menu'	=>	__( 'Secondary Menu', 'byadr' ),

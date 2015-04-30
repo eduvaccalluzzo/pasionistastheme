@@ -18,7 +18,7 @@
 	<div class="wrapper"> 
 		<div class="claim"> 
 
-			<h2> <?php the_title(  ); ?> </h2>
+			<h2><?php printf( __( 'Parroquia %s', 'byadr' ), get_the_title() ); ?></h2>
 			
 				<?php if($claim): ?>
 					<h4 class="subclaim">

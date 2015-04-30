@@ -100,7 +100,26 @@ section#s_parroquias {
 
 
 
+@media only screen and (max-width: 65rem) {
+	
 
+section#s_parroquias {
+
+		.datosParroquia {
+
+			h5 {
+				font-family: 1.6rem;
+			}
+
+			.direccion {
+				font-size: 1.2rem;
+
+			}
+		}	
+	}
+
+
+}
 
 
 

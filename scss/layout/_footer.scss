@@ -21,12 +21,46 @@ footer {
 }
 
 
-/*@media only screen and (max-width: 76.8rem) {
+
+
+
+@media only screen and (max-width: 80rem) {
 
 	footer{
-		.column.col-4 {
-			width: 25%;
+		height: 32rem;
+
+		.column.col-4,
+		.column.col-4__3 {
+			width: 100%;
+		}
+
+		.logo-article {
+			height: 12rem;
 		}
 	}
 
-}*/
+}
+
+
+
+
+
+@media only screen and (max-width: 42rem) {
+
+	footer{
+		height: 62rem;
+		
+		.footerNav .menu > li {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+		
+		.logo-article div {
+			margin-left: 5rem;
+		}
+	}
+
+}
+
+
