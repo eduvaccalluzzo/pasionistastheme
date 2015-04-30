@@ -421,9 +421,80 @@ th {
   padding: 0;
 }
 
-/*
-@import "settings/_fontface.scss";
-*/
+/* Font-Face
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: "fontello";
+  font-weight: normal;
+  font-style: normal;
+  src: url("font/fontello.eot");
+  src: url("font/fontello.eot?#iefix") format("embedded-opentype"), url("font/fontello.woff") format("woff"), url("font/fontello.ttf") format("truetype"), url("font/fontello.svg#fontello") format("svg");
+}
+.icon-heart:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-menu:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-briefcase:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-food:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-circle:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-quote-left:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-quote-right:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-down-open:before {
+  content: '\e809';
+}
+
+/* '' */
+.icon-twitter:before {
+  content: '\e80a';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\e80b';
+}
+
+/* '' */
+.icon-up-open:before {
+  content: '\e80c';
+}
+
+/* '' */
+.icon-gplus:before {
+  content: '\e80d';
+}
+
+/* '' */
+.icon-youtube-play:before {
+  content: '\e812';
+}
+
+/* '' */
 /* 2.- Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Tipografia
@@ -449,6 +520,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  line-height: 120%;
 }
 
 h3 {
@@ -995,6 +1067,24 @@ header h2#logo a {
     height: auto;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .noticias .text-center h5 {
+    font-size: 1.7rem;
+  }
+  .noticias .text-center p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .noticias .text-center {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .noticias .noticias-container {
+    width: 80%;
+  }
+}
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
@@ -1012,15 +1102,31 @@ footer .logo-article div {
   text-indent: -999rem;
 }
 
-/*@media only screen and (max-width: 76.8rem) {
-
-	footer{
-		.column.col-4 {
-			width: 25%;
-		}
-	}
-
-}*/
+@media only screen and (max-width: 80rem) {
+  footer {
+    height: 32rem;
+  }
+  footer .column.col-4,
+  footer .column.col-4__3 {
+    width: 100%;
+  }
+  footer .logo-article {
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 42rem) {
+  footer {
+    height: 62rem;
+  }
+  footer .footerNav .menu > li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  footer .logo-article div {
+    margin-left: 5rem;
+  }
+}
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
@@ -1112,6 +1218,14 @@ section#s_parroquias a:hover {
 
   .slider2 {
     display: block;
+  }
+}
+@media only screen and (max-width: 65rem) {
+  section#s_parroquias .datosParroquia h5 {
+    font-family: 1.6rem;
+  }
+  section#s_parroquias .datosParroquia .direccion {
+    font-size: 1.2rem;
   }
 }
 /*
@@ -1232,6 +1346,8 @@ section#s_parroquias a:hover {
   font-size: 1.4rem;
 }
 
+/* Menu Secondary
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .secondNav {
   position: absolute;
   bottom: 15%;
@@ -1266,6 +1382,112 @@ section#s_parroquias a:hover {
   font-style: italic;
 }
 
+/* Menu Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mobileNav {
+  width: auto;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 0;
+  text-align: right;
+  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+}
+.mobileNav:before {
+  content: '\e801 ';
+  height: 4rem;
+  width: 5rem;
+  font-family: 'fontello';
+  font-size: 2.2rem;
+  line-height: 4rem;
+  text-align: right;
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.mobileNav:hover:before {
+  cursor: pointer;
+}
+.mobileNav .menu-menu-principal-container {
+  position: fixed;
+  top: 0;
+  right: -99rem;
+  width: 50%;
+  height: 100%;
+  background-color: #262626;
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+}
+.mobileNav .menu-menu-principal-container.right_ok {
+  right: 0;
+  transition: all 600ms ease-out;
+  -webkit-transition: all 600ms ease-out;
+}
+.mobileNav #menu-menu-principal-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 10rem;
+}
+.mobileNav #menu-menu-principal-1 li a {
+  font-size: 1.8rem;
+}
+.mobileNav #menu-menu-principal-1 li {
+  margin-bottom: 2rem;
+}
+.mobileNav #menu-menu-principal-1 > li > a {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 890px) {
+  /* Menu Mobile */
+  header .mainNav {
+    display: none;
+  }
+  header .mobileNav {
+    display: block;
+  }
+  header .mobileNav #menu-menu-principal-1 {
+    padding: 0 6rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .hero .secondNav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  /* Menu Mobile */
+  header .mobileNav #menu-menu-principal-1 {
+    padding: 0 4rem;
+  }
+  header .mobileNav #menu-menu-principal-1 li a {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* Menu Mobile */
+  header .mobileNav .menu-menu-principal-container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  /* Menu Mobile */
+  header .mobileNav .menu-menu-principal-container {
+    width: 70%;
+  }
+}
 .breadcrumbs li {
   display: inline-block;
   vertical-align: top;
