@@ -1,24 +1,77 @@
 form{
 	p{
-		color: $color-texto;
+		color: $black;
+		padding: 0 !important;
+	}
+
+
+	.wpcf7-validation-errors,
+	.wpcf7-mail-sent-ng {
+  		border: none;
+  		color: red;
+  		width: 100%;
+  		max-width: 70rem;
+  		margin: 0 auto;
+  		padding: 0;
+	}
+
+
+	.formu {
+		font-family: $font-secondary;
+		color: $black-light;
+		font-size: 1.3rem;
+		padding: 3rem 0 0 0 !important;
+		text-align: center;
+	}
+
+
+	.check {
+		padding: 2rem 0 !important;
+	}
+
+
+	div.wpcf7-mail-sent-ok {
+		border: none;
 	}
 }
 
 
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
 input[type="text"], 
 input[type="email"], 
 input[type="submit"],
 textarea{
+	display: block;
 	width: 100%;
+	//height: 5rem;
 	margin: 1rem 0;
+	padding: 1rem;
+	border: none;
+	
+	
+	padding: 0 3rem;
 
-	border: 1px solid $color-borde;
+	background-color: none;
+	//border-radius: 0.5rem;
+	color: $black;
+	//text-align: center;
+	font-size: 1.6rem;
+	line-height: 5rem;
+	text-decoration: none;
+	font-weight: normal;
+
+	cursor: default;
+	white-space: nowrap;
 
 	@include transicion;
 
 	&:focus{
 		outline: none;
-		border-color: $color-primario;
 	}
 
 }
@@ -28,5 +81,22 @@ input[type="checkbox"]{
 }
 
 input[type="submit"]{
-	border: none;
+	padding: 0;
+	border: 2px solid $black;
+	background-color: transparent;
+	width: 20rem;
+	margin: 0 auto;
+
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
 }
+
+
+
+
+
+
+

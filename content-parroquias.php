@@ -2,7 +2,7 @@
 
 <section id="s_parroquias">
 
-	<h4 class="h1">Nuestras Parroquias en España</h4>
+	<h4 class="h1">Nuestras Parroquias en la zona</h4>
 	
 	<?php 
 		$args = array(

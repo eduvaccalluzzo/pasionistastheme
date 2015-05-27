@@ -17,10 +17,10 @@ $line-height: 1.8;
 
 // Colores
 
-$brand-color: #7a2031;
+$brand-color: #000000;
 $brand-color-dark: #5e1926;
 
-$brand-color-secondary: #daa520;
+$brand-color-secondary: #aff372;
 
 $black-dark: #5c5c5c;
 $black: #262626;
@@ -34,9 +34,39 @@ $gray-light: #707070;
 $white: #ffffff;
 
 
-$brand-color-spain: #ba122b;
-$brand-color-andina: #e95d0f;
-$brand-color-bolivia: #009ee0;
+$color-spain: #ffd800;
+$color-andina: #88bf67;
+$color-bolivariana: #ff4200;
+$color-mesoamericana: #009ee0;
+
+
+
+.blog-color-1,
+.nlposts-siteid-1 .nlposts-caption {
+	border-top: 5px solid $brand-color;
+}
+
+
+.blog-color-2,
+.nlposts-siteid-2 .nlposts-caption {
+	border-top: 5px solid $color-spain;
+}
+
+.blog-color-3,
+.nlposts-siteid-3 .nlposts-caption {
+	border-top: 5px solid $color-andina;
+}
+
+.blog-color-4,
+.nlposts-siteid-4 .nlposts-caption {
+	border-top: 5px solid $color-bolivariana;
+}
+
+.blog-color-5,
+.nlposts-siteid-5 .nlposts-caption {
+	border-top: 5px solid $color-mesoamericana;
+}
+
 
 
 ////////////

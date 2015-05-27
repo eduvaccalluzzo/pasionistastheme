@@ -1,3 +1,9 @@
+<?php 
+/*
+ * Template Name: Pagina Principal Pasionistas
+*/ 
+?>
+
 <?php get_header(); ?>
 
 <!-- Seccion Slider -->
@@ -57,12 +63,12 @@
 
  	?>
 
-	<article class="main">
+	<article id="conoce-home" class="main">
 		<div class="wrapper">
 
 			<?php if($logozona): ?>
 				<div class="logo-article">
-					<img src="<?php echo $logozona['url']; ?>" alt="<?php echo $logozona['alt']; ?>"></img>
+					<img src="<?php echo $logozona['url']; ?>" alt="<?php echo $logozona['alt']; ?>">
 				</div>
 			<?php endif; ?>
 			
@@ -91,90 +97,78 @@
 
 
 
-<!-- Seccion Parroquias -->
-
-<?php get_template_part( 'content' , 'parroquias' ); ?> 
 
 
 
 
-<!-- Seccion Noticias -->
-
-<?php 
-
-	$arg = array (
-		'post_per_page' => 3,
-		'post_type' => 'post',
-		'order' => 'ASC',
-	);
 
 
-	$querythumb = new WP_Query( $arg );
 
-?>
 
-<?php  if ($querythumb->have_posts() ) : ?>
 
-<section id="s_noticias" class="noticias clearfix">	
 
-		<h4 class="h1">Noticias Pasionistas España</h4>
+
+
+<!-- Seccion Zonas -->
+
+
+
+
+<?php get_template_part( 'content' , 'blogs' ); ?> 
+
+
+
 
 	
 
-		<div class="clearfix noticias-container">
+	
 
 
-				<?php while ($querythumb->have_posts() ) : $querythumb->the_post(); ?>
+<!-- Seccion Noticias 
+
+<?php get_template_part( 'content' , 'noticias' ); ?> 
+
+-->
+
+<section id="s_noticias" class="noticias clearfix">	
+	
+
+		<h4 class="h1">Noticias Pasionistas</h4>
+
+	
+
+	
 
 
+
+			<?php echo do_shortcode( '[nlposts number_posts=10 title_only=false display_type=block thumbnail=true posts_per_page=3 excerpt_length=15 sort_by_date=true sorting_order=DESC sorting_limit=3 wrapper_block_css="wrapper clearfix noticias-container" thumbnail_wh=540x450]' ) ?>
 		
-				
-				
-				<div class="column col-5 imgzone">
-
-						<div class="img-area2 visible-web">
-							<?php the_post_thumbnail( 'blog' ); ?> 
-						</div>
-						<div class="img-area2 visible-phone">
-							<?php the_post_thumbnail( 'full' ); ?> 
-						</div>
-
-						<a href="<?php the_permalink(); ?>">	
-							<div class="text-center">
-								<h5><?php the_title(); ?></h5>
-								<p><?php echo excerpt(15); ?></p>
-							</div>
-						</a>
-				</div>
-		
-
-		<?php endwhile; ?>
-	</div>
+	
 </section>
 
-	<?php endif; ?>
-	<?php wp_reset_query(); ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

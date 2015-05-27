@@ -57,13 +57,15 @@
 
 		add_image_size( 'slide1', 540, 450, true );
 
+		add_image_size( 'slide-pais', 800, 360, true );
+
 		// Custom Header
 		$defaults = array(
 			'default-image'          => get_template_directory_uri() . '/images/bghome.jpg',
 			'random-default'         => false,
-			'width'                  => 0,
-			'height'                 => 0,
-			'flex-height'            => true,
+			'width'                  => 1400,
+			'height'                 => 600,
+			'flex-height'            => false,
 			'flex-width'             => false,
 			'default-text-color'     => '',
 			'header-text'            => false,
@@ -113,6 +115,7 @@
 		      'footer-menu'	=>	__( 'Footer Menu', 'byadr' ),
 		      'social-menu'	=>	__( 'Social Menu', 'byadr' ),
 		      'second-menu'	=>	__( 'Secondary Menu', 'byadr' ),
+		      'paises-menu'	=>	__( 'Paises Menu', 'byadr' ),
 		      'mobile-menu'	=>	__( 'Mobile Menu', 'byadr' )
 		    )
 		);
@@ -144,6 +147,3 @@ function excerpt($limit) {
 
 
 
-
-
-	

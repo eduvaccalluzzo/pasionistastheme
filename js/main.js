@@ -41,8 +41,10 @@ var ventana = $(window);
 			autoplay: true,
 			autoplaySpeed: 1500,
 
-			arrows: false,
-			draggable: false,
+			arrows: true,
+			draggable: true,
+			prevArrow: '<div class="botones-previus"></div>',
+			nextArrow: '<div class="botones-nextus"></div>',
 
 			
 			responsive: [
@@ -74,7 +76,54 @@ var ventana = $(window);
 		    ]
 		});
 
+
+		$('.carouselpaises').slick({
+			centerMode: false,
+
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			pauseOnHover: false,
+		
+
+		});
+
+
+
+
+
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

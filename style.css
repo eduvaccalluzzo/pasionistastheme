@@ -11,6 +11,31 @@ Text Domain: byadr
 */
 /* 1.- Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.blog-color-1,
+.nlposts-siteid-1 .nlposts-caption {
+  border-top: 5px solid black;
+}
+
+.blog-color-2,
+.nlposts-siteid-2 .nlposts-caption {
+  border-top: 5px solid #ffd800;
+}
+
+.blog-color-3,
+.nlposts-siteid-3 .nlposts-caption {
+  border-top: 5px solid #88bf67;
+}
+
+.blog-color-4,
+.nlposts-siteid-4 .nlposts-caption {
+  border-top: 5px solid #ff4200;
+}
+
+.blog-color-5,
+.nlposts-siteid-5 .nlposts-caption {
+  border-top: 5px solid #009ee0;
+}
+
 /* Reset/Normalize
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -396,6 +421,7 @@ legend {
  */
 textarea {
   overflow: auto;
+  height: 30rem;
 }
 
 /**
@@ -441,60 +467,110 @@ th {
 
 /* '' */
 .icon-briefcase:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-food:before {
   content: '\e803';
 }
 
 /* '' */
-.icon-food:before {
+.icon-circle:before {
   content: '\e804';
 }
 
 /* '' */
-.icon-circle:before {
+.icon-quote-left:before {
   content: '\e805';
 }
 
 /* '' */
-.icon-quote-left:before {
+.icon-quote-right:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-down-open:before {
   content: '\e807';
 }
 
 /* '' */
-.icon-quote-right:before {
+.icon-twitter:before {
   content: '\e808';
 }
 
 /* '' */
-.icon-down-open:before {
+.icon-facebook:before {
   content: '\e809';
 }
 
 /* '' */
-.icon-twitter:before {
+.icon-up-open:before {
   content: '\e80a';
 }
 
 /* '' */
-.icon-facebook:before {
+.icon-gplus:before {
   content: '\e80b';
 }
 
 /* '' */
-.icon-up-open:before {
+.icon-youtube-play:before {
   content: '\e80c';
 }
 
 /* '' */
-.icon-gplus:before {
+.icon-left-dir:before {
   content: '\e80d';
 }
 
 /* '' */
-.icon-youtube-play:before {
+.icon-right-dir:before {
+  content: '\e80e';
+}
+
+/* '' */
+.icon-left:before {
+  content: '\e80f';
+}
+
+/* '' */
+.icon-right:before {
+  content: '\e810';
+}
+
+/* '' */
+.icon-angle-double-left:before {
+  content: '\e811';
+}
+
+/* '' */
+.icon-angle-double-right:before {
   content: '\e812';
 }
 
 /* '' */
+.icon-angle-circled-left:before {
+  content: '\e813';
+}
+
+/* '' */
+.icon-angle-circled-right:before {
+  content: '\e814';
+}
+
+/* '' */
+.icon-left-circled:before {
+  content: '\e815';
+}
+
+/* '' */
+.icon-right-circled:before {
+  content: '\e816';
+}
+
+/* '' */
 /* 2.- Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Tipografia
@@ -531,7 +607,7 @@ h3 {
 h4 {
   font-size: 2.4rem;
   font-weight: lighter;
-  color: white;
+  color: #707070;
   text-align: center;
   margin: 0;
 }
@@ -562,7 +638,8 @@ blockquote {
   text-align: center;
   font-size: 2.4rem;
   color: #262626;
-  margin: 0;
+  margin: 0 -100px;
+  /* width: 100%; */
   padding: 0rem 2rem;
 }
 blockquote::before, blockquote::after {
@@ -580,6 +657,14 @@ blockquote p {
 cite {
   font-size: 1.8rem;
   font-weight: lighter;
+}
+
+hr {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  background-color: #444444;
+  border: none;
 }
 
 /* Superíndice / Subíndice
@@ -614,7 +699,6 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
 
@@ -749,38 +833,6 @@ a:hover {
   color: white;
 }
 
-/* Botones
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.btn,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 4rem;
-  margin: 2rem 0;
-  padding: 0 3rem;
-  background-color: none;
-  border-radius: 0.5rem;
-  color: #262626;
-  text-align: center;
-  font-size: 1.6rem;
-  line-height: 4rem;
-  text-decoration: none;
-  font-weight: lighter;
-  cursor: pointer;
-  white-space: nowrap;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-}
-.btn:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: #7a2031;
-}
-
 /* Responsive
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .visible-web {
@@ -819,6 +871,87 @@ input[type="button"]:hover {
     display: none;
   }
 }
+form p {
+  color: #262626;
+  padding: 0 !important;
+}
+form .wpcf7-validation-errors,
+form .wpcf7-mail-sent-ng {
+  border: none;
+  color: red;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0;
+}
+form .formu {
+  font-family: "lora", helvetica;
+  color: #707070;
+  font-size: 1.3rem;
+  padding: 3rem 0 0 0 !important;
+  text-align: center;
+}
+form .check {
+  padding: 2rem 0 !important;
+}
+form div.wpcf7-mail-sent-ok {
+  border: none;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: none;
+  padding: 0 3rem;
+  background-color: none;
+  color: #262626;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  text-decoration: none;
+  font-weight: normal;
+  cursor: default;
+  white-space: nowrap;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  padding: 0;
+  border: 2px solid #262626;
+  background-color: transparent;
+  width: 20rem;
+  margin: 0 auto;
+}
+input[type="submit"]:hover {
+  background-color: #262626;
+  color: white;
+}
+
 /*
 
 @import "base/_buttons.scss";
@@ -830,7 +963,7 @@ input[type="button"]:hover {
 @import "base/_images.scss";
 
 
-@import "base/_forms.scss";
+
 
 */
 /* 3.- Layout
@@ -911,7 +1044,7 @@ input[type="button"]:hover {
 
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (max-width: 768px) {
   .column.col-2,
   .column.col-3,
   .column.col-3__2,
@@ -979,10 +1112,42 @@ header h2#logo a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.hero .claim h4 {
+  color: white;
+}
 
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 810px) {
+  section#s_noticias {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero .claim h2 {
+    font-size: 6rem;
+  }
+  .hero .claim h4 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .hero .claim h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .hero .claim h2 {
+    font-size: 4.4rem;
+  }
+}
 .main {
   padding: 5rem 0 7rem 0;
   background-color: #f3f3f3;
+}
+.main .wrapper {
+  max-width: 60rem;
 }
 .main .content-box {
   padding: 4rem;
@@ -990,16 +1155,19 @@ header h2#logo a {
   border: 1px solid #f1f2f4;
 }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-  width: 100%;
-  max-width: 70rem;
   margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
 }
+.main a {
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  font-weight: bolder;
+}
+.main a:hover {
+  color: #cbcbcb;
+}
 .main p {
-  width: 100%;
-  max-width: 70rem;
-  margin: 0 auto;
   padding: 2rem 0;
 }
 
@@ -1009,11 +1177,14 @@ header h2#logo a {
   position: relative;
   padding: 9rem 0;
 }
+.noticias .wrapper {
+  max-width: 82rem;
+}
 .noticias h4.h1 {
   padding-bottom: 3rem;
 }
 .noticias .noticias-container {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -1021,9 +1192,11 @@ header h2#logo a {
   color: #262626;
 }
 .noticias .imgzone {
-  margin: 2rem 1.5rem;
-  background-color: #f3f3f3;
   height: auto;
+  padding: 0 0.5rem;
+}
+.noticias .noticia-colour {
+  background-color: #f3f3f3;
 }
 .noticias .img-area2 {
   overflow: hidden;
@@ -1044,24 +1217,75 @@ header h2#logo a {
 }
 .noticias .text-center {
   width: 100%;
-  padding: 3rem 2.5rem 5rem 2.5rem;
 }
 .noticias .text-center p {
   font-size: 1.3rem;
 }
+.noticias .text-center .recuadro {
+  padding: 2rem;
+}
+.noticias .nlposts-block-container .nlposts-block-item {
+  float: left;
+  display: block;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5rem;
+  height: auto;
+}
+.noticias .nlposts-block-container .nlposts-block-item .nlposts-block-thumbnail {
+  background-color: #f3f3f3;
+}
+.noticias .nlposts-block-thumbnail-litem a {
+  overflow: hidden;
+  display: block;
+}
+.noticias .nlposts-block-container .nlposts-block-thumbnail-litem a > img {
+  display: block;
+  padding: 0;
+  line-height: 1;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: none;
+  -webkit-filter: none;
+  opacity: 1;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.noticias .nlposts-block-container .nlposts-block-thumbnail-litem a > img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+.noticias h3 {
+  font-size: 1.6rem;
+  font-family: "lora", helvetica;
+  text-align: center;
+  line-height: 1.8;
+}
+.noticias .nlposts-block-excerpt a {
+  color: #262626;
+  font-weight: bold;
+}
+.noticias .nlposts-block-excerpt p {
+  font-size: 1.3rem;
+  color: #707070;
+  margin-top: 1rem;
+}
+.noticias .nlposts-caption {
+  padding: 2rem;
+}
 
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 1700px) {
-  .noticias .imgzone {
-    margin: 2rem 1.2rem;
-  }
-}
-@media only screen and (max-width: 1350px) {
-  .noticias .imgzone {
-    margin: 2rem 1rem;
-  }
-}
 @media only screen and (max-width: 1250px) {
   .noticias .img-area2 {
     height: auto;
@@ -1075,14 +1299,22 @@ header h2#logo a {
     font-size: 1.4rem;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .noticias .text-center {
-    padding: 2rem 1.5rem 2rem 1.5rem;
+@media only screen and (max-width: 768px) {
+  .noticias .noticias-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .noticias .imgzone {
+    margin: 1.5rem auto;
   }
 }
-@media only screen and (max-width: 450px) {
-  .noticias .noticias-container {
-    width: 80%;
+@media only screen and (max-width: 680px) {
+  .noticias .nlposts-container {
+    margin: 0 auto;
+  }
+  .noticias .nlposts-block-container .nlposts-block-item {
+    width: 100%;
+    margin-bottom: 1.25rem;
   }
 }
 /* Footer
@@ -1101,10 +1333,16 @@ footer .logo-article div {
   margin-left: 3rem;
   text-indent: -999rem;
 }
+footer .copy p {
+  color: #707070;
+  font-size: 1.1rem;
+  text-align: center;
+  font-style: italic;
+}
 
-@media only screen and (max-width: 80rem) {
+@media only screen and (max-width: 800px) {
   footer {
-    height: 32rem;
+    height: 35rem;
   }
   footer .column.col-4,
   footer .column.col-4__3 {
@@ -1114,9 +1352,9 @@ footer .logo-article div {
     height: 12rem;
   }
 }
-@media only screen and (max-width: 42rem) {
+@media only screen and (max-width: 520px) {
   footer {
-    height: 62rem;
+    height: 65rem;
   }
   footer .footerNav .menu > li {
     width: 100%;
@@ -1124,7 +1362,7 @@ footer .logo-article div {
     margin-bottom: 2rem;
   }
   footer .logo-article div {
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
 }
 /* Header
@@ -1164,15 +1402,50 @@ header h2#logo a {
 
 section#s_parroquias {
   overflow: hidden;
-  padding: 10rem 0 13rem;
+  padding: 10rem 0;
 }
 section#s_parroquias .carouselParroquias {
   width: 100%;
 }
+section#s_parroquias .fichaParroquia {
+  padding-bottom: 10rem;
+}
+section#s_parroquias .botones-previus,
+section#s_parroquias .botones-nextus {
+  float: left;
+  cursor: pointer;
+  width: 50%;
+}
+section#s_parroquias .botones-previus::before {
+  position: absolute;
+  content: "\e811";
+  height: 4rem;
+  width: auto;
+  left: 45%;
+  font-family: "fontello";
+  font-size: 2.2rem;
+  line-height: 4rem;
+  color: #707070;
+}
+section#s_parroquias .botones-nextus::before {
+  position: absolute;
+  content: "\e812";
+  height: 4rem;
+  width: auto;
+  right: 45%;
+  font-family: "fontello";
+  font-size: 2.2rem;
+  line-height: 4rem;
+  color: #707070;
+}
 section#s_parroquias .imgParroquia {
   width: auto;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
   position: relative;
+}
+section#s_parroquias .imgParroquia img {
+  -webkit-box-shadow: 0px 10px 25px -2px rgba(107, 107, 107, 0.5);
+  -moz-box-shadow: 0px 10px 25px -2px rgba(107, 107, 107, 0.5);
+  box-shadow: 0px 10px 25px -2px rgba(107, 107, 107, 0.5);
 }
 section#s_parroquias .datosParroquia {
   position: absolute;
@@ -1194,24 +1467,24 @@ section#s_parroquias .datosParroquia .direccion {
 }
 section#s_parroquias a:hover {
   color: #707070;
-  cursor: default;
+  cursor: pointer;
 }
 
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 110rem) {
+@media only screen and (max-width: 1100px) {
   section#s_parroquias .datosParroquia {
     width: 85%;
     padding: 1rem 0.2rem;
   }
   section#s_parroquias .datosParroquia h5 {
-    font-family: 1.4rem;
+    font-size: 1.5rem;
   }
   section#s_parroquias .datosParroquia .direccion {
     font-size: 1.1rem;
   }
 }
-@media only screen and (max-width: 90rem) {
+@media only screen and (max-width: 900px) {
   .slider1 {
     display: none;
   }
@@ -1220,12 +1493,143 @@ section#s_parroquias a:hover {
     display: block;
   }
 }
-@media only screen and (max-width: 65rem) {
+@media only screen and (max-width: 650px) {
+  section#s_parroquias .botones-previus::before {
+    left: 35%;
+  }
+  section#s_parroquias .botones-nextus::before {
+    right: 35%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  section#s_parroquias .botones-previus:before,
+  section#s_parroquias .botones-nextus:before {
+    display: none;
+  }
+  section#s_parroquias .fichaParroquia {
+    padding-bottom: 7rem;
+  }
   section#s_parroquias .datosParroquia h5 {
-    font-family: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
   }
   section#s_parroquias .datosParroquia .direccion {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  section#s_parroquias .datosParroquia h5 {
     font-size: 1.2rem;
+  }
+  section#s_parroquias .datosParroquia .direccion {
+    font-size: 1rem;
+  }
+}
+section#s_paises {
+  overflow: hidden;
+  padding-top: 5rem;
+  position: relative;
+}
+section#s_paises h4.h1 {
+  margin-bottom: 5rem;
+}
+section#s_paises .wrapper {
+  max-width: 80rem;
+}
+section#s_paises .carouselpaises {
+  width: 100%;
+  margin-top: 2rem;
+}
+section#s_paises .carouselpaises a:hover {
+  color: #262626;
+}
+section#s_paises .contain-paises {
+  width: 60%;
+  position: relative;
+  margin: 0 auto 10rem auto;
+  overflow: hidden;
+}
+section#s_paises .contain-paises .text-center {
+  position: absolute;
+  background-color: #f3f3f3;
+  width: 40rem;
+  height: auto;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+}
+section#s_paises .contain-paises .text-center p {
+  font-size: 1.5rem;
+}
+section#s_paises .contain-paises .zonal {
+  padding: 0;
+}
+section#s_paises .contain-paises .zonal .blog-color-2,
+section#s_paises .contain-paises .zonal .blog-color-3,
+section#s_paises .contain-paises .zonal .blog-color-4,
+section#s_paises .contain-paises .zonal .blog-color-5 {
+  padding-bottom: 1rem;
+}
+section#s_paises .contain-paises .imgPaises {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+section#s_paises .contain-paises .imgPaises img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section#s_paises .contain-paises h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 680px) {
+  section#s_paises h4.h1 {
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 560px) {
+  section#s_paises .contain-paises .text-center {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  section#s_paises h4.h1 {
+    margin-bottom: 0;
+  }
+  section#s_paises .paisesNav li {
+    display: block;
+    text-align: center;
+    border-left: none;
+    margin-bottom: 1rem;
+  }
+  section#s_paises .contain-paises .text-center {
+    width: 24rem;
+  }
+  section#s_paises .contain-paises .text-center h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  section#s_paises .contain-paises .text-center p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  section#s_paises .contain-paises .text-center {
+    width: 22rem;
   }
 }
 /*
@@ -1271,12 +1675,9 @@ section#s_parroquias a:hover {
 }
 
 .logo-article {
-  width: 25rem;
-  height: 15rem;
+  width: 20rem;
+  height: 12rem;
   margin: 0 auto;
-}
-.logo-article img {
-  padding-left: 4rem;
 }
 
 /* Menu principal / Main Nav
@@ -1285,13 +1686,17 @@ section#s_parroquias a:hover {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2000;
   text-align: right;
 }
+.mainNav ul {
+  margin: 0;
+}
 .mainNav li {
-  display: inline-block;
-  vertical-align: baseline;
+  background-color: #262626;
+  float: left;
   margin: 0rem;
-  margin-left: 3rem;
+  padding: 0 1.5rem;
 }
 .mainNav li a {
   display: block;
@@ -1299,15 +1704,33 @@ section#s_parroquias a:hover {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.mainNav .sub-menu a {
-  text-transform: none;
+.mainNav li .sub-menu {
+  position: absolute;
+  text-align: left;
+  margin: 0 auto;
+  top: -20rem;
+  z-index: -1;
+  border: 3px solid #707070;
+  border-top: none;
+  -webkit-transition: top 200ms ease-out;
+  transition: top 200ms ease-out;
 }
-.mainNav .sub-menu a:hover,
-.mainNav .sub-menu .current-menu-item > a {
+.mainNav li .sub-menu li {
+  float: none;
+  display: block;
+  margin-left: 0;
+}
+.mainNav li a:hover,
+.mainNav li .current-menu-item > a {
   color: white;
 }
-.mainNav .sub-menu .sub-menu li {
-  margin-left: 1rem;
+.mainNav li.menu-item-has-children:hover {
+  z-index: -1;
+}
+.mainNav li.menu-item-has-children:hover .sub-menu {
+  top: 3.9rem;
+  -webkit-transition: top 400ms ease-out;
+  transition: top 400ms ease-out;
 }
 .mainNav .menu-title {
   border-bottom: 1px solid #707070;
@@ -1350,6 +1773,8 @@ section#s_parroquias a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .secondNav {
   position: absolute;
+  width: 100%;
+  max-width: 36rem;
   bottom: 15%;
   left: 50%;
   -webkit-transform: translate(-50%, -15%);
@@ -1358,11 +1783,13 @@ section#s_parroquias a:hover {
 }
 .secondNav li {
   float: left;
+  width: 33.3%;
   vertical-align: baseline;
   margin: 0rem;
   border: 1px solid white;
   border-right: none;
   padding: 0 1rem;
+  text-align: center;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
@@ -1380,6 +1807,45 @@ section#s_parroquias a:hover {
   color: white;
   text-transform: uppercase;
   font-style: italic;
+}
+
+/* Menu Paises
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.paisesNav ul {
+  text-align: center;
+  width: 100%;
+}
+.paisesNav ul li {
+  display: inline-block;
+  border-left: 1px solid #707070;
+  padding: 0 1rem;
+}
+.paisesNav ul li:first-child {
+  border-left: none;
+  margin-left: 0;
+}
+.paisesNav ul li a {
+  display: block;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #707070;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+.paisesNav ul li.andina:hover a {
+  color: #88bf67;
+}
+.paisesNav ul li.bolivariana:hover a {
+  color: #ff4200;
+}
+.paisesNav ul li.spagna:hover a {
+  color: #ffd800;
+}
+.paisesNav ul li.mesoam:hover a {
+  color: #009ee0;
 }
 
 /* Menu Mobile
@@ -1451,6 +1917,11 @@ section#s_parroquias a:hover {
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 890px) {
+  .paisesNav {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
   /* Menu Mobile */
   header .mainNav {
     display: none;
@@ -1465,6 +1936,13 @@ section#s_parroquias a:hover {
 @media only screen and (max-width: 680px) {
   .hero .secondNav {
     display: none;
+  }
+
+  .paisesNav li {
+    display: block;
+    float: none;
+    text-align: center;
+    border-bottom: none;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -1492,7 +1970,7 @@ section#s_parroquias a:hover {
   display: inline-block;
   vertical-align: top;
   font-size: 1.6rem;
-  color: #7a2031;
+  color: black;
 }
 .breadcrumbs li::after {
   content: '/';
@@ -1525,11 +2003,11 @@ section#s_parroquias a:hover {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-  padding-top: 8rem;
 }
 
 .slick-list {
   position: relative;
+  overflow: hidden;
   display: block;
   margin: 0;
   padding: 0;
@@ -1572,9 +2050,6 @@ section#s_parroquias a:hover {
   float: left;
   height: 100%;
   min-height: 1px;
-  margin: 0 5px;
-  position: relative;
-  opacity: 0.5;
   display: none;
 }
 [dir="rtl"] .slick-slide {
@@ -1601,7 +2076,26 @@ section#s_parroquias a:hover {
   border: 1px solid transparent;
 }
 
-.slick-center {
+button.slick-prev {
+  background-color: red;
+  margin: 0 auto;
+}
+
+.carouselParroquias {
+  padding-top: 8rem;
+}
+.carouselParroquias .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  margin: 0 5px;
+  position: relative;
+  opacity: 0.5;
+}
+.carouselParroquias .slick-list {
+  overflow: visible;
+}
+.carouselParroquias .slick-center {
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
@@ -1613,9 +2107,28 @@ section#s_parroquias a:hover {
   z-index: 999;
 }
 
-button.slick-prev {
-  background-color: red;
-  margin: 0 auto;
+.carouselpaises .contain-paises.slick-slide {
+  overflow: visible !important;
+}
+
+#cookie-notice {
+  background-color: rgba(38, 38, 38, 0.9) !important;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: center;
+}
+#cookie-notice .cookie-notice-container {
+  padding: 2rem 1rem;
+}
+#cookie-notice .cookie-notice-container span {
+  display: block;
+  color: #f3f3f3;
+  padding-bottom: 2rem;
+}
+#cookie-notice a.button {
+  border: 2px solid #cbcbcb;
+  padding: 0.5rem 1rem;
+  color: #cbcbcb;
 }
 
 /* @import "plugins/_googlemaps.scss";

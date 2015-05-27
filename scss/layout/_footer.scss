@@ -18,16 +18,26 @@ footer {
 
 	  	text-indent: -999rem;
 	}
+
+
+	.copy {
+		p{
+			color: $black-light;
+			font-size: 1.1rem;
+			text-align: center;
+			font-style: italic;
+		}
+	}
 }
 
 
 
 
 
-@media only screen and (max-width: 80rem) {
+@media only screen and (max-width: 800px) {
 
 	footer{
-		height: 32rem;
+		height: 35rem;
 
 		.column.col-4,
 		.column.col-4__3 {
@@ -45,10 +55,10 @@ footer {
 
 
 
-@media only screen and (max-width: 42rem) {
+@media only screen and (max-width: 520px) {
 
 	footer{
-		height: 62rem;
+		height: 65rem;
 		
 		.footerNav .menu > li {
 			width: 100%;
@@ -57,7 +67,7 @@ footer {
 		}
 		
 		.logo-article div {
-			margin-left: 5rem;
+			margin-left: 4rem;
 		}
 	}
 

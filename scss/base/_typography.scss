@@ -38,7 +38,7 @@ h3{
 h4{
 	font-size: 2.4rem;
 	font-weight: lighter;
-	color: $white;
+	color: $black-light;
 	text-align: center;
 	margin: 0;
 }
@@ -74,9 +74,9 @@ blockquote{
 	font-family: $font-secondary;
 	text-align: center;
 	font-size: 2.4rem;
-	color: $black;
-
-	margin: 0;
+	color: #262626;
+	margin: 0 -100px;
+	/* width: 100%; */
 	padding: 0rem 2rem;
 
 	&::before, 
@@ -101,6 +101,15 @@ cite{
 	font-weight: lighter;
 }
 
+
+
+hr {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  background-color: #444444;
+  border: none;
+}
 
 
 /* Superíndice / Subíndice

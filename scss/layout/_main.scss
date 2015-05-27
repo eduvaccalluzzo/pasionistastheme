@@ -3,6 +3,9 @@
 	padding: 5rem 0 7rem 0;
 	background-color: $black-lighter;
 	
+	.wrapper {
+		max-width: 60rem;
+	}
 
 	.content-box{
 		//margin: 0 4rem;
@@ -14,17 +17,26 @@
 
 
 	h1, h2, h3, h4, h5, h6 {
-	  width: 100%;
-	  max-width: 70rem;
+	  //width: 100%;
+	  //max-width: 70rem;
 	  margin: 0 auto;
 	  padding: 2rem 0;
 	  text-align: center;
 	}
 
+	a {
+		color: $black-light;
+		border-bottom: 1px solid $black-light;
+		font-weight: bolder;
+
+		&:hover {
+		color: $grey;
+		}
+	
+	}
+	
 	p {
-	  width: 100%;
-	  max-width: 70rem;
-	  margin: 0 auto;
+	 
 	  padding: 2rem 0;
 
 	}

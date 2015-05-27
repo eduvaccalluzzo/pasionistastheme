@@ -20,7 +20,95 @@
 
 	.claim{
 		text-align: center;
-		@include centrado;		
+		@include centrado;
+
+		h4 {
+			color: $white;
+		}	
+	}
+
+
+}
+
+
+
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media only screen and (max-width: 810px) {
+	
+	section#s_noticias {
+		padding: 4rem 0;
 	}
 
 }
+
+
+
+
+@media only screen and (max-width: 550px) {
+	
+	.hero{
+		.claim h2{
+			font-size: 6rem;
+			
+
+		}
+
+		.claim h4{
+			font-size: 2rem;
+			line-height: 1.4;
+			
+
+		}
+	}
+
+}
+
+
+
+@media only screen and (max-width: 440px) {
+	
+	.hero{
+		.claim h2{
+			font-size: 5rem;
+			
+
+		}
+
+	}
+
+}
+
+
+@media only screen and (max-width: 360px) {
+	
+	.hero{
+		.claim h2{
+			font-size: 4.4rem;
+			
+
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

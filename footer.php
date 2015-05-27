@@ -1,4 +1,4 @@
-<?php wp_footer(); ?>
+
 <footer>
 
 	<div class="wrapper">
@@ -20,6 +20,10 @@
 				<div class="logo-article">
 					<div>Pasionistas</div>
 				</div>
+
+				<div class="copy">
+					<p><?php printf( __( '© %s Pasionistas. Derechos reservados', 'af' ), get_the_date( 'Y' ) ); ?></p>
+				</div>
 				
 		
 		</div>
@@ -27,35 +31,7 @@
 
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php wp_footer(); ?>
 </body>
 
 </html>

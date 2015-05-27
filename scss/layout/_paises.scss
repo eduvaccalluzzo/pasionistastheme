@@ -1,0 +1,252 @@
+section#s_paises {
+	
+	//background-color: red;
+	overflow: hidden;
+	padding-top: 5rem;
+	//padding: 10rem 0;
+	position: relative;
+
+
+	
+
+	h4.h1 {
+			margin-bottom: 5rem;
+		}
+
+	.wrapper{
+		max-width: 80rem;
+	}
+
+	.carouselpaises {
+		width: 100%;
+		margin-top: 2rem;
+		//padding: 8rem 0;	
+		//margin: 0 auto;
+
+		a{
+				&:hover {
+				color: $black;
+
+				}
+			}
+
+
+	}
+
+
+	.contain-paises {
+		width: 60%;
+		//max-width: 60rem;
+		position: relative;
+
+		margin: 0 auto 10rem auto;
+		overflow: hidden;
+
+
+		.text-center{
+		position: absolute;
+ 		background-color: $black-lighter;
+ 		width: 40rem;
+ 		height: auto;
+ 		padding: 1rem 0.5rem;
+ 		text-align: center;
+
+ 		
+ 		
+ 		left: 50%;
+
+ 		-webkit-transform: translate(-50%, -40%);
+		-ms-transform: translate(-50%, -40%);
+		transform: translate(-50%, -40%);
+		
+			
+
+
+	 		p {
+			  	font-size: 1.5rem;
+
+			}
+
+		}
+
+		.zonal{
+		
+	 		padding: 0;
+
+	 		.blog-color-2,
+	 		.blog-color-3,
+	 		.blog-color-4,
+	 		.blog-color-5 {
+
+	 			padding-bottom: 1rem;
+	 		}
+		}
+
+		
+		.imgPaises {
+			width: 100%;
+			height: auto;
+			//box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4); 
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+	  		background-position: center center;
+			margin: 0 auto;
+
+
+			img {
+				  display: block;
+				  width: 100%;
+				  height: auto;
+			}
+		}	
+
+
+		h3 {
+			font-size: 2.6rem;
+			margin-bottom: 1.5rem;
+		}
+
+		
+	}
+
+	
+}
+
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 890px) {
+	
+	
+
+}
+
+
+
+
+@media only screen and (max-width: 680px) {
+	
+
+
+	section#s_paises h4.h1 {
+	  padding-bottom: 5rem;
+	  margin-bottom: 0;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 560px) {
+	
+	
+	section#s_paises {
+
+		.contain-paises {
+
+				.text-center {
+					width: 30rem;
+
+				}
+		}
+	}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+	
+	
+
+}
+
+
+
+
+@media only screen and (max-width: 390px) {
+	
+	section#s_paises {
+
+		h4.h1 {
+			margin-bottom: 0;
+		}
+
+		
+		.paisesNav {
+		//padding-bottom: 30rem;
+
+			li{
+		 		  display: block;
+		 		  text-align: center;
+		 		  //border-right: 1px solid $black-light;
+		 		  border-left: none;
+		 		  margin-bottom: 1rem;
+
+		 		  
+		 	  
+		  	  }
+		}  	  
+
+		.contain-paises {
+
+				.text-center {
+					width: 24rem;
+
+					h3 {
+						font-size: 2rem;
+						margin-bottom: 1rem;
+					}
+
+					p {
+						font-size: 1.2rem;
+						margin: 0;
+					}
+
+				}
+		}
+	}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 390px) {
+	section#s_paises {
+		.contain-paises {
+
+				.text-center {
+					width: 22rem;
+
+				}
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+

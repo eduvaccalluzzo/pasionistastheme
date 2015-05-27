@@ -1,17 +1,88 @@
 section#s_parroquias {
 	//background-color: red;
 	overflow: hidden;
-	padding: 10rem 0 13rem;
+	padding: 10rem 0;
 
 	.carouselParroquias {
 		width: 100%;
 		//padding: 8rem 0;	
+
+
+		button.slick-prev,
+		button.slick-next {
+
+		}
 	}
+
+	.fichaParroquia {
+		padding-bottom: 10rem;
+
+	}
+
+
+	.botones-previus,
+	.botones-nextus {
+		
+		float: left;
+		cursor: pointer;
+		//margin: 0 auto;
+		width: 50%;
+		//margin: 0 5rem;
+
+	}
+
+
+	.botones-previus{
+		
+		&::before {
+		position: absolute;
+		content: "\e811";
+		height: 4rem;
+		width: auto;
+		left:  45%;
+
+		font-family: "fontello";
+
+		font-size: 2.2rem;
+		line-height: 4rem;
+		
+		color: $black-light;
+		}
+
+	}
+
+	.botones-nextus {
+		
+		&::before {
+		position: absolute;
+		content: "\e812";
+		height: 4rem;
+		width: auto;
+		right:  45%;
+
+		font-family: "fontello";
+
+		font-size: 2.2rem;
+		line-height: 4rem;
+		
+		color: $black-light;
+		}
+	}
+
 
 	.imgParroquia {
 		width: auto;
-		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4); 
+		
 		position: relative;
+
+		img {
+			-webkit-box-shadow: 0px 10px 25px -2px rgba(107,107,107,0.5);
+			-moz-box-shadow: 0px 10px 25px -2px rgba(107,107,107,0.5);
+			box-shadow: 0px 10px 25px -2px rgba(107,107,107,0.5);
+
+			//width: 100%;
+
+		}
 	}
 
 
@@ -43,7 +114,7 @@ section#s_parroquias {
 
  	a:hover {
  		color: $black-light;
- 		cursor: default;
+ 		cursor: pointer;
  	}
 
 
@@ -58,30 +129,29 @@ section#s_parroquias {
 /* Media queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 110rem) {
+@media only screen and (max-width: 1100px) {
 	
 	section#s_parroquias {
-
 		.datosParroquia {
 			width: 85%;
 			padding: 1rem 0.2rem;
 
 			h5 {
-				font-family: 1.4rem;
+				font-size: 1.5rem;
 			}
 
 			.direccion {
 				font-size: 1.1rem;
 
 			}
-		}	
+		}
 	}
 
 }
 
 
 
-@media only screen and (max-width: 90rem) {
+@media only screen and (max-width: 900px) {
 	
 
 
@@ -98,24 +168,26 @@ section#s_parroquias {
 }
 
 
-
-
-@media only screen and (max-width: 65rem) {
+@media only screen and (max-width: 650px) {
 	
 
-section#s_parroquias {
-
-		.datosParroquia {
-
-			h5 {
-				font-family: 1.6rem;
+	section#s_parroquias {
+		
+		.botones-previus{
+		
+			&::before {
+			left:  35%;
 			}
 
-			.direccion {
-				font-size: 1.2rem;
+		}
 
+		.botones-nextus {
+			
+			&::before {
+			right:  35%;
 			}
-		}	
+		}
+
 	}
 
 
@@ -123,6 +195,78 @@ section#s_parroquias {
 
 
 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px) {
+	
+
+	section#s_parroquias {
+
+		.botones-previus,
+		.botones-nextus {
+
+			&:before {
+				display: none;	
+			}
+			
+
+		}
+
+		.fichaParroquia {
+			padding-bottom: 7rem;
+
+		}
+
+		.datosParroquia {
+
+			h5 {
+				font-size: 1.3rem; 
+				line-height: 1.2;
+			}
+
+			.direccion {
+				font-size: 1.1rem;
+
+			}
+		}
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 340px) {
+	
+
+	section#s_parroquias {
+
+
+
+		.datosParroquia {
+
+			h5 {
+				font-size: 1.2rem; 
+			}
+
+			.direccion {
+				font-size: 1rem;
+
+			}
+		}
+	}
+
+
+}
 
 
 
